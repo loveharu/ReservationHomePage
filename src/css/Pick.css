@@ -1,0 +1,53 @@
+.Picker {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* 섹션 배경색 */
+    text-align: center;
+    
+}
+
+.Container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Picker strong {
+    font-size: 50px;
+    color: #2a7de1; /* 강조 텍스트 색상 */
+}
+
+.PickList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* 각 아이템을 일정한 간격으로 배치 */
+    flex-wrap: wrap; /* 화면 크기에 따라 아이템 줄바꿈 */
+    gap: 30px; /* 아이템 간 간격 */
+}
+
+.PickList li {
+    width: 250px; /* 이미지와 설명이 들어갈 박스 크기 */
+    text-align: center; /* 이미지와 설명 중앙 정렬 */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 카드 스타일 그림자 */
+    padding: 20px;
+    transition: transform 0.3s ease; /* 마우스 오버 시 변환 애니메이션 */
+}
+
+.PickList li:hover {
+    transform: scale(1.05); /* 마우스 오버 시 확대 효과 */
+}
+
+.PickList img {
+    width: 100%; /* 이미지를 박스에 꽉 채움 */
+    height: 150px; /* 고정된 높이로 설정 */
+    object-fit: cover; /* 이미지 비율을 유지하며 박스에 맞춤 */
+    border-radius: 10px; /* 이미지 모서리 둥글게 */
+}
+
+.desc {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555; /* 설명 텍스트 색상 */
+    line-height: 1.5; /* 텍스트 줄 간격 */
+}

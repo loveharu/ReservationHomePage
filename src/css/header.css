@@ -1,0 +1,129 @@
+/* 헤더 기본 스타일 */
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F9F7F0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0 20px;
+}
+
+/* 로고 스타일 */
+.header_logo {
+  width: 70px;
+  object-fit: contain;
+  margin-right: 200px;
+}
+
+/* 검색바 스타일 */
+.header_search {
+  display: flex;
+  flex: 0.7; /* 검색바 크기 조정 */
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid rgb(172, 233, 172);
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  margin-right: auto; /* 오른쪽 여백 자동 설정 */
+  transition: box-shadow 0.3s ease;
+}
+
+.header_search:hover {
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+}
+
+.header_searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.header_searchIcon {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* 네비게이션 메뉴 (로그인, 회원가입) */
+.header_nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-right: auto; /* 왼쪽으로 밀어 로그인/회원가입을 검색바 가까이 */
+}
+
+.header_option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* 햄버거 메뉴 스타일 */
+.hamburger_menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown_menu {
+  position: absolute;
+  top: 70px;
+  right: 150px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 150px;
+  z-index: 1000;
+}
+
+.dropdown_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown_menu ul li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown_menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.dropdown_menu ul li:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown_menu ul li:last-child {
+  border-bottom: none;
+}
+.header_option {
+  display: flex;
+  flex-direction: row; /* 로그인과 회원가입을 가로로 나란히 배치 */
+  align-items: center;
+  cursor: pointer;
+}
+
+.header_optionLineOne, .header_optionLineTwo {
+  margin-right: 20px; /* 로그인과 회원가입 사이 간격 조정 */
+}
+
+.header_optionLineTwo {
+  margin-left: 20px; /* 필요하면 회원가입 왼쪽에 여백 추가 */
+}

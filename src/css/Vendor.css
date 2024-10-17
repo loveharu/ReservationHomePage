@@ -1,0 +1,65 @@
+.vendor-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.vendor-container strong {
+    font-size: 50px;
+    color: #2a7de1; /* 강조 텍스트 색상 */
+}
+.banner-section {
+    margin-bottom: 40px;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
+
+.benefit-section {
+    margin-bottom: 50px;
+}
+
+.benefit-list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.benefit-list li {
+    margin: 0 20px;
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.benefit-list .icon {
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.cta-section {
+    margin-top: 100px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,81 @@
+.featureSection {
+    text-align: center; /* 섹션 전체를 중앙 정렬 */
+    padding: 50px 0;
+    background-color: #f8f9fa; /* 부드러운 배경색 */
+    font-family: 'Noto Sans KR', sans-serif; /* 사용자 친화적인 폰트 설정 */
+  }
+  
+  .Container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .highlight {
+    color: #5ccc24; /* 강조 텍스트의 색상 변경 */
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* 작은 화면에서도 잘 정렬되도록 설정 */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    flex: 1;
+    max-width: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 이미지 섀도우 추가 */
+    border-radius: 10px; /* 이미지 및 박스 모서리를 둥글게 설정 */
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* 호버 시 부드러운 확대 효과 */
+  }
+  
+  .features li:hover {
+    transform: scale(1.05); /* 호버 시 박스 확대 효과 */
+  }
+  
+  .featureImage, .featureImage2, .featureImage3 {
+    width: 100%; /* 이미지를 박스 너비에 맞게 설정 */
+    height: 180px;
+    object-fit: cover; /* 이미지 비율 유지하면서 크기 조정 */
+  }
+  
+  .featureDesc {
+    padding: 20px;
+    font-size: 18px; /* 설명문의 크기를 키움 */
+    color: #666;
+    text-align: left; /* 설명문을 왼쪽으로 정렬 */
+  }
+  
+  .featureDesc div:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column; /* 작은 화면에서는 세로로 정렬 */
+      align-items: center;
+    }
+  
+    .features li {
+      max-width: 100%;
+    }
+  
+    .featureImage, .featureImage2, .featureImage3 {
+      height: 200px;
+    }
+  }
+  

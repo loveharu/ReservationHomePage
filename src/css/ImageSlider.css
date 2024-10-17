@@ -1,0 +1,41 @@
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 50%;
+   
+    border-radius: 15px; /* 모서리를 둥글게 설정 */
+    position: relative; /* dots 위치를 절대값으로 조정하기 위해 필요 */
+  }
+  
+  .slide {
+    position: relative;
+    text-align: left;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 15px; /* 이미지에 둥근 모서리 적용 */
+  }
+  
+  .ad-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 36px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', sans-serif;
+  }
+  
+  .slick-dots {
+    position: absolute; /* dots를 절대 위치로 설정하여 부모의 영향을 받지 않게 함 */
+    bottom: -40px; /* 페이지네이션 위치 조정 */
+    left: 50%;
+    transform: translateX(-50%); /* 가운데 정렬 */
+  }
+  
