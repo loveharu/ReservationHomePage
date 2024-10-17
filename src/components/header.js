@@ -77,10 +77,10 @@ function Header() {
           {isDropdownOpen && (
             <div className="dropdown_menu">
               <ul>
-                <li><a href="#">마이 페이지</a></li>
-                <li><a href="#">내 예약</a></li>
-                <li><a href="#">검색 하기</a></li>
-                <li><a href="#">지도보기</a></li>
+              <li><a href={`http://localhost:${serverPort}/ex/member/mypage`}>마이 페이지</a></li>
+                <li><a href={`http://localhost:${serverPort}/ex/member/myorders`}>내 예약</a></li>
+                <li><a href={`http://localhost:${serverPort}/ex/my/search?query=${encodeURIComponent(searchTerm)}`}>검색 하기</a></li>
+                <li><a href={`http://localhost:${serverPort}/ex/map/mapService`}>지도보기</a></li>
               </ul>
             </div>
           )}
