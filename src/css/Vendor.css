@@ -30,12 +30,49 @@
     padding: 0;
 }
 
+/* 각 항목에 애니메이션 효과 적용 */
 .benefit-list li {
-    margin: 0 20px;
-    text-align: center;
-    flex-basis: 30%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    margin: 20px 20px;
 }
 
+/* 요소가 화면에 들어왔을 때 애니메이션 효과 */
+.benefit-list li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* hover 시 확대 효과 */
+.benefit-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* 각 항목이 순차적으로 나타나도록 딜레이 설정 */
+.benefit-list li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.benefit-list li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.benefit-list li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* 애니메이션 정의 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .benefit-list .icon {
     border-radius: 15px;
     width: 100px;

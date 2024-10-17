@@ -1,9 +1,11 @@
-import React from "react";
+
 import "../css/Pick.css";
+import React, { useState } from "react";
 import foodPick from "../img/foodPick.png"
 import hairPick from "../img/hairPick.png";
 import parkPick from "../img/parkPick.png";
 function Pick() {
+    const [serverPort, setServerPort] = useState('8081'); // 기본 포트는 8081로 설정
     return (
         <section className="Picker">
             <div className="Container">
