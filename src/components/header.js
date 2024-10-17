@@ -39,7 +39,11 @@ function Header() {
   };
 
   const handleLoginClick = () => {
-    window.location.href = `http://localhost:${serverPort}/ex/user/main`;
+    window.location.href = `http://localhost:${serverPort}/ex/user/login`;
+  };
+
+  const handleJoinClick = () => {
+    window.location.href = `http://localhost:${serverPort}/ex/user/insert`;
   };
 
   const handleKeyPress = (e) => {
@@ -66,7 +70,10 @@ function Header() {
 
       <div className='header_nav'>
         <div className='header_option' onClick={handleLoginClick}>
-          <span className='header_optionLineOne'>로그인/회원가입</span>
+          <span className='header_optionLineOne'>로그인</span>
+        </div>
+        <div className = 'header_option' onClick={handleJoinClick}>
+          <span className='header_optionLineOne'>회원가입</span>
         </div>
         <div className='header_option'>
           <span className='header_optionLineOne'>
