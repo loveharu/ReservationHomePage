@@ -9,6 +9,7 @@ function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [serverPort, setServerPort] = useState('8081'); // 기본 포트는 8081로 설정
+  const baseUrl = 'http://192.168.30.169';
 
   // 컴포넌트가 로드될 때, 서버로부터 포트 번호를 요청
   useEffect(() => {
@@ -35,15 +36,25 @@ function Header() {
           window.location.href = `http://localhost:${serverPort}/ex/my/search?query=${encodeURIComponent(searchTerm)}`;
         })
         .catch(err => console.error(err));
+        // 공유기 사용시 위 메서드 대신 해당 메서드로 대신 실행
+        /*
+         axios.get(`${baseUrl}/ex/my/search?query=${encodeURIComponent(searchTerm)}`)
+        .then(response => {
+          console.log(response.data);
+          window.location.href = `${baseUrl}/ex/my/search?query=${encodeURIComponent(searchTerm)}`;
+        })
+        .catch(err => console.error(err));*/
     }
   };
 
   const handleLoginClick = () => {
     window.location.href = `http://localhost:${serverPort}/ex/user/login`;
+    //공유시 버전시 해당 값을 대신 할당 '${baseUrl}/ex/user/login' 
   };
 
   const handleJoinClick = () => {
     window.location.href = `http://localhost:${serverPort}/ex/user/insert`;
+    // '${baseUrl}/ex/user/insert' 
   };
 
   const handleKeyPress = (e) => {
@@ -84,7 +95,7 @@ function Header() {
           {isDropdownOpen && (
             <div className="dropdown_menu">
               <ul>
-              <li><a href={`http://localhost:${serverPort}/ex/member/mypage`}>마이 페이지</a></li>
+              <li><a href={`http://localhost:${serverPort}/ex/member/mypage`}>마이 페이지</a></li> 
                 <li><a href={`http://localhost:${serverPort}/ex/member/myorders`}>내 예약</a></li>
                 <li><a href={`http://localhost:${serverPort}/ex/my/search?query=${encodeURIComponent(searchTerm)}`}>검색 하기</a></li>
                 <li><a href={`http://localhost:${serverPort}/ex/map/mapService`}>지도보기</a></li>
