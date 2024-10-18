@@ -75,6 +75,7 @@ function Vendor() {
 
             <div className="cta-section">
                 <h2>지금 등록하고 더 많은 혜택을 누리세요!</h2>
+                
                 <button className="cta-button">판매자 등록하기</button>
             </div>
         </div>

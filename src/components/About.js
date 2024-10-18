@@ -22,7 +22,7 @@ return(
             <img className="featureImage" src={Feature1}></img>
             <div className="featureDesc">
                 <div>모든것을 전부 예약 가능한 곳</div>
-                <div>장소면 장소 상품이면 상품 아무곳이나 예약히야되는곳이면 전부 예약 가능합니다. 한번에 알오보고 예약까지 해보세요!</div>
+                <div>장소면 장소 상품이면 상품 우리는 예약해야되는곳이면 전부 예약 가능합니다. 계획과 예약을 한번에 해보세요!</div>
             </div>
             </li>
             <li>
@@ -37,7 +37,7 @@ return(
             <img className="featureImage3" src={Feature3}></img>
             <div className="featureDesc">
             <div>믿을 수 있는 리뷰 시스템</div>
-            <div>실패없는 경험을 보장합니다. 최대 50프로 할인도 받고 국밥같은 상품들을 누려보세요</div>
+            <div>실패없는 경험을 보장합니다. 최대 50프로 할인도 받고 최상의 상품들을 누려보세요</div>
             </div>
             </li>
             </ul>
